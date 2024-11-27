@@ -1,0 +1,106 @@
+.faq-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fafafa; /* Light background to make the content stand out */
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .faq-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Adjusted for more balanced grid */
+    gap: 20px;
+  }
+  
+  .faq-card {
+    background-color: #ffffff; /* White card background for a clean look */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 4px solid #007bff; /* Blue accent line for a more professional feel */
+    overflow: hidden;
+  }
+  
+  .faq-card:hover {
+    transform: translateY(-8px); /* Slightly reduced hover translation */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    border-left: 4px solid #0056b3; /* Darker blue for hover effect */
+  }
+  
+  .faq-card h3 {
+    font-size: 1.2rem;
+    color: #007bff; /* Blue for the question heading */
+    margin-bottom: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+  }
+  
+  .faq-card p {
+    font-size: 1rem;
+    color: #555; /* Slightly lighter text for easy reading */
+    line-height: 1.5;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  .page-button {
+    padding: 12px 25px;
+    background-color: #007bff; /* Primary blue color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: 500;
+  }
+  
+  .page-button:hover {
+    background-color: #0056b3; /* Darker blue for hover */
+    transform: scale(1.05); /* Slight scale effect to highlight the button */
+  }
+  
+  .page-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .page-button:disabled:hover {
+    background-color: #cccccc; /* No hover effect for disabled state */
+  }
+  
+  @media (max-width: 768px) {
+    .faq-container {
+      width: 90%;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    .faq-list {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust for smaller screens */
+    }
+  
+    .page-button {
+      padding: 10px 20px;
+    }
+  }
+  
